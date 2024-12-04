@@ -1,0 +1,47 @@
+{
+  "name": "rwaproject",
+  "version": "1.0.0",
+  "description": "A Rich Web Application project for managing customer orders",
+  "author": "Ian Mugo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "mongodb": "^5.6.0",
+    "next": "^13.5.0",
+    "next-auth": "^4.23.0",
+    "nodemailer": "^6.9.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^13.5.0"
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals"
+  },
+  "jsconfig": {
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@context/*": [
+          "src/app/context/*"
+        ],
+        "@smallapp/*": [
+          "src/app/smallapp/*"
+        ]
+      }
+    }
+  }
+}
